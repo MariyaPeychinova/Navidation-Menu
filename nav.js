@@ -1,5 +1,5 @@
 function navSlide() {
-    const hamburger = document.querySelector('.hamburger');
+    const hamburger = document.querySelector('.hamburger__damo');
     const nav = document.querySelector('.nav-links');
     const navLinks = document.querySelectorAll('.nav-links li');
 
