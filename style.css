@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Indie+Flower&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /*keeps everything in the box, got the .about back inside the page*/
+}
+
+body {
+    font-family: 'Indie Flower', 'Gloria Hallelujah', cursive, 'Open Sans';
+    font-size: 30px;
+}
+
+/*nav*/
+.hamburger {
+    position: absolute;
+    left: 0;
+    top: 0;
+    /* background-color: darkslategray; */
+    opacity: 0.9;
+    z-index: 100;
+    display: block;
+    cursor: pointer;
+    padding-left: 10px;
+}
+
+/* .hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(226, 226, 226);
+    margin: 5px;
+    z-index: 100;
+    transition: all 0.3s ease;
+} */
+
+.empty {
+    height: 15px;
+}
+
+.nav-links {
+    position: absolute;
+     left: 0px;
+     padding-left: 10px;
+     top: 0;
+     background-color: darkslategray;
+     opacity: 0.9;
+     height: 100vh;
+     width: 220px;
+     display: flex;
+     flex-direction: column;
+     align-items: left;
+     justify-content: space-around;
+     z-index: 50;
+     transform: translateX(-100%);
+     transition: transform 0.5s ease-in;
+}
+
+.nav-links li {
+    list-style: none;
+    opacity: 0;
+}
+
+.nav-links p {
+    color: rgb(226, 226, 226);
+    opacity: 1;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.nav-links a {
+    color: rgb(226, 226, 226);
+    opacity: 1;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.nav-active {
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+/* .toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2 {
+    opacity: 0;
+}
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+} */
+/*nav*/
